@@ -30,7 +30,7 @@ public class FileCountStreamService {
     }
 
     private long readCount() throws IOException {
-        var path = Path.of("E:\\Personal\\Projects\\SpringFluxStreamingDemo\\test");
+        var path = Path.of("file/path/here");
         return Files.walk(path).filter(Files::isRegularFile).count();
     }
 }
